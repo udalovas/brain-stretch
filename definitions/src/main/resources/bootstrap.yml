@@ -1,0 +1,10 @@
+#spring:
+#  application:
+#    name: definitions-service
+#  profiles:
+#    active:
+#      default
+#  cloud:
+#    config:
+#      enabled: true
+#      uri: localhost:8888

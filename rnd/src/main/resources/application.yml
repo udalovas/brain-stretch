@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: rnd-service
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: localhost:8888
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: DEBUG
+        discovery: DEBUG
+server:
+  port: 8081

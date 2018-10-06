@@ -1,0 +1,23 @@
+tracer.property: "I AM THE DEFAULT"
+
+## h2 setup
+# spring.h2.console.enabled: "true"
+
+spring:
+  jpa:
+    database: "POSTGRESQL"
+    show-sql: "true"
+    generate-ddl: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+        jdbc.lob.non_contextual_creation: "true"
+  datasource:
+    platform:  "postgres"
+    url: "jdbc:postgresql://postgres-dev.ck0nyjtnziyh.us-east-2.rds.amazonaws.com:5432/bs"
+    username: "postgres_dev_master"
+    password: "{cipher}b7881312a327d521a500249bcb611a9b2194aa8513fcce4b90d6b0107834e299"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+
+definitions.sample.text: "What you could see at School"

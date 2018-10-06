@@ -1,0 +1,5 @@
+service-discovery:
+  image:   udalovas/be-service-discovery:${BUILD_NAME}
+  mem_limit: 1073741824
+  ports:
+  - "8761:8761"

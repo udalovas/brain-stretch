@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS definitions;
+
+CREATE TABLE definitions (
+  id   VARCHAR(100) PRIMARY KEY NOT NULL,
+  text TEXT NOT NULL,
+);
